@@ -24,3 +24,6 @@ def scrape_quotes(url):
 
         # Parse the HTML content of the page
         soup = BeautifulSoup(response.content, "html.parser")
+
+        # Find all quotes on the page
+        quotes = soup.find_all("div", class_="quote")
