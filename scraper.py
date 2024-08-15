@@ -61,3 +61,6 @@ def main():
     
     # Call the function to scrape quotes
     scrape_quotes(url)
+
+if __name__ == "__main__":
+    main()
