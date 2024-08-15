@@ -13,6 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 import validators
 
+
 def scrape_quotes(url):
     """
     Scrapes quotes, authors, and tags from the given URL.
@@ -41,11 +42,13 @@ def scrape_quotes(url):
     except requests.RequestException as e:
         print(f"Error fetching data: {e}")
 
+
 def is_valid_url(url):
     """
     Validates the URL format.
     """
     return validators.url(url)
+
 
 def main():
     """
@@ -58,9 +61,10 @@ def main():
     if not is_valid_url(url):
         print("Invalid URL. Please enter a valid URL.")
         return
-    
+
     # Call the function to scrape quotes
     scrape_quotes(url)
+
 
 if __name__ == "__main__":
     main()
