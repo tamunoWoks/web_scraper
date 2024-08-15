@@ -12,3 +12,8 @@ pip install validators
 import requests
 from bs4 import BeautifulSoup
 import validators
+
+def scrape_quotes(url):
+    """
+    Scrapes quotes, authors, and tags from the given URL.
+    """
