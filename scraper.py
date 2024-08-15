@@ -17,3 +17,6 @@ def scrape_quotes(url):
     """
     Scrapes quotes, authors, and tags from the given URL.
     """
+    try:
+        # Send a GET request to the website
+        response = requests.get(url)
