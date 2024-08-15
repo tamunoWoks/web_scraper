@@ -46,3 +46,8 @@ def is_valid_url(url):
     Validates the URL format.
     """
     return validators.url(url)
+
+def main():
+    """
+    Main function to execute the scraping with user-provided URL.
+    """
