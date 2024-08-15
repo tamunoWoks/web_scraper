@@ -58,3 +58,6 @@ def main():
     if not is_valid_url(url):
         print("Invalid URL. Please enter a valid URL.")
         return
+    
+    # Call the function to scrape quotes
+    scrape_quotes(url)
